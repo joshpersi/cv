@@ -1,107 +1,278 @@
-#set page(margin: 2cm)
+#set page(
+  margin: 1cm
+)
 
 #set text(
-  font: "Noto serif",
-  fill: rgb("#333333"),
-  size: 12pt
+    font: "Noto Serif"
 )
 
-#set par(
-  justify: true
-)
-
-#text(size: 32pt, tracking: 5pt)[
-  #set align(center)
+#text(size: 32pt, tracking: 0.05cm)[
   #set par(spacing: 0pt)
-  FirstName LastName
-]
+  Josh Persi
+]  
 
-#text(size: 16pt)[
-  #set align(center)
-  Professional Title
-]
-
-#line(length: 100%, stroke: gray)
-
-#text(size: 12pt)[
-  #set align(center)
-  #set par(spacing: 0pt)
-  
-  Location | Email address
-]
-
-#line(length: 100%, stroke: gray)
-
-= Professional Summary
-#lorem(30)
-
-#line(length: 100%, stroke: gray)
-
-= Work Experience
+#text(size: 16pt)[Data Scientist]
 
 #grid(
-  columns: (3fr, 1fr),
+  columns: (1fr, 3fr, 1fr, 3fr),
+  gutter: (-15pt, 0pt, -2pt),
 )[
-  
-#par(spacing: 0pt)[JOB TITLE]         
+  *Phone*
 
-#par(spacing: 5pt)[Company Name]
+  *Email*
+
+  *Blog*
+][
+  (604) 809-8648
+  
+  #link("joshpersi@protonmail.com")
+
+  #link("joshpersi.github.io/blog")
 
 ][
-  #set align(right)
-  Date - Present
+ *GitHub*
+
+ *LinkedIn*
+][
+  #link("github.com/joshpersi")
+
+  #link("linkedin.com/in/josh-persi")
 ]
 
-- #lorem(10)
+= Experience
 
-- #lorem(10)
+#grid(
+  columns: (1fr, 4fr)
+)[
+  2022 - Present
+][
+  #smallcaps([Science Specialist])
+  
+  #text(style: "oblique")[Canadian Food Inspection Agency]  
 
-- #lorem(10)
+  - #lorem(15)
+
+  - #lorem(15)
+
+  - #lorem(15)
+
+  *Key Achievement*
+  
+  #lorem(15)
+]
 
 #v(0.5cm)
-
-#grid(
-  columns: (3fr, 1fr),
-)[
-  
-#par(spacing: 0pt)[JOB TITLE]         
-
-#par(spacing: 5pt)[Company Name]
-
-][
-  #set align(right)
-  Date - Present
-]
-
-- #lorem(10)
-
-- #lorem(10)
-
-- #lorem(10)
-
-#line(length: 100%, stroke: gray)
 
 = Education
 
 #grid(
-  columns: (3fr, 1fr)
+  columns: (1fr, 4fr)
 )[
-  Institution name | degree | location 
+  2018 - 2020
 ][
-  #set align(right)
-  year - year
+  #smallcaps([Master of Science])
+  
+  #text(style: "oblique")[McGill University, Montréal, Québec]  
+
+  *Thesis*: Biogeography
 ]
 
 #grid(
-  columns: (3fr, 1fr)
+  columns: (1fr, 4fr)
 )[
-  Institution name | degree | location 
+  2013 - 2017
 ][
-  #set align(right)
-  year - year 
+  #smallcaps([Bachelor of Sciences in Environmental Sciences])
+  
+  #text(style: "oblique")[University of Guelph, Guelph, Ontario]  
+
+  *Major*: Ecology
 ]
 
+= Skills
 
-#line(length: 100%, stroke: gray)
+#grid(
+  columns: (1fr, 1fr, 1fr),
+  gutter: 0pt,
+  align: top
+)[
+  - Natural language processing 
+  
+  - Machine learning 
 
-= Publications
+  - Data processing
+][
+  - Data engineering
+  
+  - Workflow orchestration
+
+  - Environment management
+][
+  - Data visualization
+
+  - Report creation 
+
+  - Dashboard creation
+][
+  
+]
+
+= Computer Languages
+#grid(
+  columns: (1fr, 2fr, 1fr, 2fr, 1fr, 2fr),
+  gutter: 8pt,
+  align: horizon
+)[
+  #set align(right)
+  R
+  
+  SQL
+
+  Python
+][
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+  )
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: gray),
+  ) 
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+  )
+][
+  #set align(right)
+    
+  Git
+  
+  Bash
+
+  Docker
+][
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: gray),
+  )
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+  )
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+  )
+][
+  #set align(right)
+  
+  html
+  
+  css
+
+  javascript
+][
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+  )
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+  )
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+  )
+]
+
+= Languages
+#grid(
+  columns: (1fr, 2fr, 1fr, 2fr, 1fr, 2fr),
+  gutter: 8pt,
+  align: top
+)[
+  #set align(right)
+  English
+][
+  #set par(spacing: 5pt)
+  
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+  )
+
+   #text(size: 8pt)[Native fluency]
+][
+  #set align(right)
+  
+  French
+][
+  #set par(spacing: 5pt)
+  
+  #stack(
+    dir: ltr,
+    spacing: 2.5pt,
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: blue),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+    box(width: 8pt, height: 8pt, fill: gray),
+  )
+
+  #text(size: 8pt)[B-certified]
+][
+ 
+][
+  
+]
