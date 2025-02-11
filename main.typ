@@ -7,13 +7,16 @@
 )
 
 #text(size: 32pt, tracking: 0.05cm)[
-  #set par(spacing: 0pt)
+  #set par(spacing: 15pt)
   Josh Persi
 ]  
 
-#text(size: 16pt)[Data Scientist]
+#text(size: 16pt)[
+  #set par(spacing: 10pt)
+  Data Scientist
+]
 
-#grid(
+#par(spacing: 10pt)[#grid(
   columns: (1fr, 3fr, 1fr, 3fr),
   gutter: (-15pt, 0pt, -2pt),
 )[
@@ -37,57 +40,72 @@
   #link("github.com/joshpersi")
 
   #link("linkedin.com/in/josh-persi")
-]
+]]
+
+= Summary
+I am a self-taught data scientist with a formal background in the biological sciences. My current work with the Canadian Food Inspection Agency involves leveraging government, industry, and open-source data to model pest risks to plant health in Canada.  
 
 = Experience
 
 #grid(
-  columns: (1fr, 4fr)
+  columns: (1fr, 5fr)
 )[
   2022 - Present
 ][
-  #smallcaps([Science Specialist])
+  #par(spacing: 0pt)[#smallcaps([Science Specialist])]
   
-  #text(style: "oblique")[Canadian Food Inspection Agency]  
+  #par(spacing: 5pt)[#text(style: "oblique")[Canadian Food Inspection Agency]]
 
-  - #lorem(15)
-
-  - #lorem(15)
-
-  - #lorem(15)
-
-  *Key Achievement*
+  - Provide analytics support to scientists and policy makers
   
-  #lorem(15)
+  - Perform descriptive, predictive, diagnostic, and prescriptive analyses 
+
+  - Create data-driven reports, dashboards, and Shiny applications 
 ]
 
-#v(0.5cm)
+#grid(
+  columns: (1fr, 5fr)
+)[
+  2021 - 2021
+][
+  #par(spacing: 0pt)[#smallcaps([Field Botanist])]
+  
+  #par(spacing: 5pt)[#text(style: "oblique")[Toronto Region Conservation Authority]]
+
+  - Conduct biotic inventories of terrestrial and aquatic plants in the Toronto area
+  
+  - Identify taxa using dichotomous keys, morphological features, and habitat
+]
 
 = Education
 
 #grid(
-  columns: (1fr, 4fr)
+  columns: (1fr, 5fr)
 )[
   2018 - 2020
 ][
-  #smallcaps([Master of Science])
-  
-  #text(style: "oblique")[McGill University, Montréal, Québec]  
 
-  *Thesis*: Biogeography
+  #par(spacing: 0pt)[#smallcaps([Master of Science])]
+  
+  #par(spacing: 5pt)[#text(style: "oblique")[McGill University]]
+
+  *Thesis*: #link("https://escholarship.mcgill.ca/concern/theses/jh343x41s")[Elevational patterns in seed fates: experimental tests in the Rocky Mountains]
 ]
 
 #grid(
-  columns: (1fr, 4fr)
+  columns: (1fr, 5fr)
 )[
   2013 - 2017
 ][
-  #smallcaps([Bachelor of Sciences in Environmental Sciences])
+  #par(spacing: 0pt)[#smallcaps([Bachelor of Science in Environmental Sciences])]
   
-  #text(style: "oblique")[University of Guelph, Guelph, Ontario]  
-
-  *Major*: Ecology
+  #par(spacing: 5pt)[#text(style: "oblique")[University of Guelph]]
+  
+  *Thesis*: #link("https://www.journals.uchicago.edu/doi/abs/10.1086/716783")[Influence of Arbuscular Mycorrhizal Fungi on Root Allocation and Morphology in Two _Medicago_ Species]
 ]
+
+
+
 
 = Skills
 
