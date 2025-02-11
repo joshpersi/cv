@@ -16,6 +16,69 @@
   Data Scientist
 ]
 
+#v(20pt)
+
+#par(spacing: 20pt)[#grid(
+  columns: (1fr, 3fr, 4fr),
+  gutter: (-15pt, 0pt, -2pt),
+)[
+  *Phone*
+
+  *Email*
+][
+  (604) 809-8648
+  
+  #link("joshpersi@protonmail.com")
+][]
+]
+
+#v(20pt)
+
+#par(spacing: 5pt)[
+  *Dr. Jane Doe*
+  
+  _Head of the superfluous department of redundancy_
+]
+
+#v(15pt)
+
+#par(spacing: 10pt)[
+  Company Name
+  
+  123 Main Street
+
+  Toronto, Ontario M5V 3L9
+]
+
+#v(15pt)
+
+Dear Dr. Doe, 
+
+#lorem(50)
+
+#lorem(50) 
+
+#lorem(50) 
+
+#v(15pt)
+
+Best Regards, 
+
+Josh Persi
+
+
+#pagebreak()
+
+#text(size: 32pt, tracking: 0.05cm)[
+  #set par(spacing: 15pt)
+  Josh Persi
+]  
+
+#text(size: 16pt)[
+  #set par(spacing: 10pt)
+  Data Scientist
+]
+
 #par(spacing: 10pt)[#grid(
   columns: (1fr, 3fr, 1fr, 3fr),
   gutter: (-15pt, 0pt, -2pt),
@@ -42,7 +105,6 @@
   #link("linkedin.com/in/josh-persi")
 ]]
 
-= Summary
 I am a self-taught data scientist with a formal background in the biological sciences. My current work with the Canadian Food Inspection Agency involves leveraging government, industry, and open-source data to model pest risks to plant health in Canada.  
 
 = Experience
